@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<link rel="icon" type="image/x-icon" href="cal1.jpg">
+
+<script>
+
+
+
+function calculate() {
+      
+var input1 = parseFloat(document.getElementById("input1").value);
+      
+var input2 = parseFloat(document.getElementById("input2").value);
+      
+var operator = document.getElementById("opera").value;
+      
+var result;
+      
+switch (operator) {
+        
+case "addition":
+          
+result = input1 + input2;
+          
+break;
+        
+case "subtraction":
+          
+result = input1 - input2;
+          
+break;
+        
+case "multiplication":
+          
+result = input1 * input2;
+         
+break;
+        
+case "division":
+          
+result = input1 / input2;
+          
+break;
+      
+}
+      
+document.getElementById("result").value = result;
+    
+}
+
+    
+function clearValues(){
+
+ 
+document.getElementById('input1').value = '';
+
+document.getElementById('input2').value = '';
+       
+document.getElementById('result').value = '';
+    
+}
+
+    
+</script>
+
+</head>
+
+<body>
+ <fieldset>
+ <legend>Calculator</legend>
+ <img src="cal2.jpg" alt="Calculator">
+ <form name="calc"action="">
+
+<label for="input1">Input 1:</label>
+<input type="text"id="input1"value="" placeholder="Enter the First Input"><br>
+    
+<br><label for="input2">Input2:</label>
+              
+<input type="text" id="input2"value="" placeholder="Enter the second Input">
+<br>
+<br><label for="opera"></label> Select an operation:</label>
+
+<Select name="opera" id="opera">
+<option value="addition">Addition</option>
+<option value="subtraction">Subtraction</option>
+<option value="multiplication">Multiplication</option>
+<option value="division">Division</option>
+</Select><br>
+
+<br><label for="result">Result is:</label>
+        
+<input type="text" id="result" value=""><br>
+   </form>
+<br>
+<table>
+<th align = "center">
+<td><button type="button" onclick="clear();"><img src="reset.jpg" alt="reset"height="60px"width="70px"></td>
+<td><button type="button" onclick="calculate();"><img src="submitbut.jpg" alt="submitbut"height="80px"width="80px"></td>
+</th>
+</table>
+</fieldset>
+</body>
+</html>
+

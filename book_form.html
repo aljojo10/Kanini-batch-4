@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Form</title>
+</head>
+<body>
+<fieldset name = "f1" id = "f1">
+<legend>Customer info</legend>
+<form name = "form1" id = "form1">
+<label>Name: </label>
+<input type = "text" name = "name" id = "name" placeholder = "Enter your name" autofocus required>
+<br/>
+<label>Telephone: </label>
+<input type = "tel" name = "telephone" id = "telephone" placeholder = "Pattern: 234-567-8910" pattern = "" required>
+<br/>
+<label>Email: </label>
+<input type = "email" name = "mail" id = "email" placeholder = "Enter your email address">
+</form>
+</fieldset>
+<fieldset name = "f2" id = "f2">
+<form id = "form2" name = "form2">
+<label>Books</label>
+<select name = "books" id = "books">
+<option name = "book1" id = "book1" value = "HTML5 - Bruce Lawson and Remy Sharp">HTML5 - Bruce Lawson and Remy Sharp</option>
+<option name = "book2" id = "book2" value = "HTML5 - Up and Running - Mark Pilgrim">HTML5 - Up and Running - Mark Pilgrim</option>
+<option name = "book3" id = "book3" value = "Head First HTML5 Programming - Eric Freeman">Head First HTML5 Programming - Eric Freeman</option>
+<option name = "book4" id = "book4" value = "Mastering HTML, CSS and JavaScript - Laura Lemay ">Mastering HTML, CSS and JavaScript - Laura Lemay </option>
+
+</select>
+<label>Quantity: </label>
+<input type = "number" min = 1 max = 5>
+</form>
+</fieldset>
+<input type = "submit" onclick = "window.alert('You have successfully submitted the Book Form!')">
+</body>
+</html>
